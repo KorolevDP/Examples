@@ -1,11 +1,23 @@
-﻿Console.Write("Enter user name: ");
-string username = Console.ReadLine();
+﻿using System;
 
-if(username.ToLower() == "maria")
+namespace ConditionIfElse
 {
-    Console.WriteLine("Hey!! Masha here!!");
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter user name: ");
+            string username = Console.ReadLine();
+
+            if(username.ToLower() == "maria")
+            {
+                Console.WriteLine("Hey!! Masha here!!");
+            }
+            else
+            {
+                Console.Write($"Hi! {username}");
+            }
+        }
+    }
 }
-else
-{
-    Console.Write($"Hi! {username}");
-}
+

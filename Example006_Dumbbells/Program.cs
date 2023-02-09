@@ -1,16 +1,29 @@
-﻿int a = 1;
-int b = 2;
-int c = 6;
-int d = 8;
-int e = 4;
+﻿using System;
 
-int max = a;
+namespace Dumbbells
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 1;
+            int b = 2;
+            int c = 6;
+            int d = 8;
+            int e = 4;
 
-if (a > max) max = a;
-if (b > max) max = b;
-if (c > max) max = c;
-if (d > max) max = d;
-if (e > max) max = e;
+            int max = a;
 
-Console.Write($"max = {max}");
+            if (a > max) max = a;
+            if (b > max) max = b;
+            if (c > max) max = c;
+            if (d > max) max = d;
+            if (e > max) max = e;
+
+            Console.Write($"max = {max}");
+        }
+    }
+}
+
+
 
